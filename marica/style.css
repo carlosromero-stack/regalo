@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url("imagenes/fondo-pc.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+@media (max-width:768px) {
+    body {
+        background-image: url("imagenes/fondo-celular.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-attachment: fixed;
+        height: 100dvh;
+        object-fit: cover;
+
+    }
+    
+    .titulo {
+        margin-left: 200px;
+        margin-top: 50px;
+
+    }
+    .titulo.imagen {
+        width: 3500px;
+        max-width: 80%;
+    }
+
+    .subtitulo {
+        font-size: 40px;
+        font-family: "Pacifico", cursive;
+        font-weight: bold;
+        margin-left: 40px;
+        margin-top: 15px;
+        width: 500px;
+    }
+
+    .pregunta1 {
+        background-image: url(imagenes/image1.png);
+        background-size: cover;
+        background-position: center;
+        margin-left: 290px;
+        margin-top: 30px;
+        width: 550px;
+        height: 350px;
+    }
+
+    .pregunta1 .titulo-pregunta {
+        font-size: 35px;
+        font-weight: bold;
+        padding: 30px 30px 10px 30px;
+        margin-left: 54px;
+    }
+
+    .pregunta1 .texto-pregunta {
+        font-size: 30px;
+        height: 200px;
+        padding-left: 90px;
+        padding-right: 70px;
+    }
+    .pregunta2 {
+        background-image: url(imagenes/image2.png);
+        background-size: cover;
+        background-position: center;
+        width: 658px;
+        height: 600px;
+        margin-left: 15px;
+    }
+    .pregunta2 .titulo-pregunta {
+        font-size: 35px;
+        font-weight: bold;
+        padding: 130px 90px 10px 60px;
+        height: 240px;
+        width: 550px;
+    }
+    .pregunta2 .texto-pregunta {
+        font-size: 30px;
+        padding: 0px 50px 0px 60px;
+        text-align: justify;
+    }
+    .pregunta3{
+        background-image: url(imagenes/image4.png);
+        background-size: cover;
+        background-position: center;
+        width: 830px;
+        height: 700px;
+    }
+    .pregunta3 .titulo-pregunta {
+        font-size: 35px;
+        font-weight: bold;
+        padding: 140px 150px 10px 200px;
+    }
+    .pregunta3 .texto-pregunta {
+        font-size: 30px;
+        padding: 10px 45px 10px 110px;
+    }
+    .pregunta4{
+        background-image: url(imagenes/image5.png);
+        background-size: cover;
+        background-position: center;
+        width: 700px;
+        height: 520px;
+        margin-left: 20px;
+        margin-top: 35px;
+    }
+    .pregunta4 .titulo-pregunta {
+        font-size: 35px;
+        font-weight: bold;
+        padding: 80px 120px 10px 60px;
+    }
+    .pregunta4 .texto-pregunta {
+        font-size: 30px;
+        padding: 10px 70px 0px 60px;
+    }
+    .pregunta .texto-pregunta2 {
+        font-size: 30px;
+        padding: 0px 70px 00px 110px;
+    }
+    .pregunta .texto-pregunta3 {
+        font-size: 30px;
+        padding: 0px 70px 10px 140px;
+    }
+    .pregunta5 {
+        background-image: url(imagenes/image6.png);
+        background-size: cover;
+        background-position: center;
+        width: 790px;
+        height: 600px;
+        margin-left: 35px;
+        margin-top: 35px;
+    }
+    .pregunta5 .titulo-pregunta {
+        font-size: 35px;
+        font-weight: bold;
+        padding: 80px 10px 10px 150px;
+    }
+    .pregunta5 .texto-pregunta {
+        font-size: 30px;
+        padding: 25px 80px 0px 80px;
+    }
+    .pregunta6 {
+        background-image: url(imagenes/image3.png);
+        background-size: cover;
+        background-position: center;
+        width: 700px;
+        height: 950px;
+        margin-top: 50px;
+        margin-left: 80px;
+    }
+    .pregunta6 .titulo-pregunta {
+        font-size: 35px;
+        font-weight: bold;
+        padding: 250px 60px 10px 60px;
+    }
+    .pregunta6 .texto-pregunta {
+        font-size: 30px;
+        padding: 10px 78px 10px 60px;
+    }
+    .footer {
+        text-align: center;
+        padding: 50px;
+    }
+    .boton-camara {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    .camara {
+        width: 100px;
+    }
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        background-color: rgba(0,0,0,0.6);
+
+        justify-content: center;
+        align-items: center;
+        touch-action: none;
+
+    }
+    .album {
+        position: relative;
+
+        width: 80%;
+        height: 1300px;
+        max-width: 600px;
+
+        background-image: url("imagenes/album.jpeg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .fondo-album {
+        width: 100%;
+        display: block;
+    }
+    .recuerdo {
+        position: absolute;
+        overflow: hidden;
+    }
+    .recuerdo1 {
+        top: 85px;
+        left: 320px;
+        width: 225px;
+        height: 250px;
+        transform: rotate(9deg);
+    }
+
+    .recuerdo2 {
+        top: 510px;
+        right: 230px;
+        width: 180px;
+        height: 215px;
+        transform: rotate(2deg);
+    }
+
+    .recuerdo3 {
+        bottom: 170px;
+        left: 350px;
+
+        width: 175px;
+        height: 200px;
+        transform: rotate(-14deg);
+    }
+    .foto1 {
+        width: 225px;
+        height: 250px;
+        position: relative;
+        z-index: 1;
+    }
+    .foto2 {
+        width: 180px;
+        height: 215px;
+        position: relative;
+        z-index: 1;
+    }
+    .foto3 {
+        width: 175px;
+        height: 200px;
+        position: relative;
+        z-index: 1;
+    }
+    .rascado {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 225px;
+        height: 250px;
+
+        z-index: 2;
+
+        touch-action: none;
+    }
+    .cerrar {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+
+}
